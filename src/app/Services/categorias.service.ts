@@ -30,12 +30,12 @@ export class CategoriasService {
   }
   AddCategoria(categoria: Categoria): Observable<any>
   {
-    return this.http.post<Categoria>(this.url, categoria , httpOptions)
+    console.log(categoria)
+    return this.http.post<Categoria>(this.url,categoria,httpOptions);
   }
   UpdateCategoria(id :number, categoria: Categoria) :Observable<any>
   {
     const apiUrl = `${this.url}/${id}`;
-
     return this.http.put<Categoria>(apiUrl,categoria,httpOptions);
   }
   DeleteCategoria (id :number) :Observable<any>

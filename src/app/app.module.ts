@@ -11,12 +11,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTableModule} from '@angular/material/table';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import { NewCategoriaComponent } from './Components/Categoria/new-categoria/new-categoria.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatSelectModule} from '@angular/material/select';
+
+
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListCategoriasComponent
+    ListCategoriasComponent,
+    NewCategoriaComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +37,13 @@ import {MatButtonModule} from '@angular/material/button';
     MatTableModule,
     MatIconModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDividerModule,
+    MatSelectModule
   ],
   providers: [
     TiposService,

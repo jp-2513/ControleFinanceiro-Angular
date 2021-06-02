@@ -23,7 +23,7 @@ export class ListCategoriasComponent implements OnInit {
     this.displayedColumns = this.ExibirColunas();
   }
   ExibirColunas(): string[]{
-    return ['nome,icone,tipo,acoes']
+    return ['nome','icone','tipo','acoes']
   }
 
 }
